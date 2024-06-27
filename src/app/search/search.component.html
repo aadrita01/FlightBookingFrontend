@@ -1,0 +1,30 @@
+<div class="search-container">
+    <h2>Flight Search</h2>
+    <form (submit)="searchFlights()" fxLayout="column" fxLayoutAlign="center center">
+      <div fxLayout="row" fxLayoutGap="20px">
+      <mat-form-field>
+        <label for="origin">Origin:</label>
+        <input matInput type="text" id="origin" name="origin" [(ngModel)]="searchForm.origin" required>
+      </mat-form-field>
+
+      <mat-divider></mat-divider>
+  
+      <mat-form-field>
+        <label for="destination">Destination:</label>
+        <input matInput type="text" id="destination" name="destination" [(ngModel)]="searchForm.destination" required>
+      </mat-form-field>
+
+      <mat-divider></mat-divider>
+  
+      <mat-form-field>
+        <label for="departureDate">Departure Date:</label>
+        <input matInput type="date" id="departureDate" name="departureDate" [(ngModel)]="searchForm.departureDate" required>
+        <!-- <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+        <mat-datepicker #datepicker></mat-datepicker> -->
+      </mat-form-field>
+  
+    </div>
+
+      <button mat-raised-button color="primary" type="submit">Search</button>
+    </form>
+  </div>

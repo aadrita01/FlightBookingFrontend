@@ -1,0 +1,12 @@
+<!-- flight-id-form.component.html -->
+<div class="container mt-5">
+    <h2>Enter Flight ID</h2>
+    <form [formGroup]="flightIdForm">
+      <div class="form-group">
+        <label for="flightId">Flight ID:</label>
+        <input type="text" id="flightId" formControlName="flightId" class="form-control" required>
+      </div>
+      
+      <button type="button" class="btn btn-danger" (click)="deleteFlight()">Delete</button>
+    </form>
+  </div>

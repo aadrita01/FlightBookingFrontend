@@ -1,0 +1,48 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+        <div *ngIf="!isLoggedIn">
+            <mat-card-header>
+                <mat-card-title>Log in</mat-card-title>
+            </mat-card-header>
+            <form (submit)="login($event)" class="example-form">
+                <mat-card-content>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Username" name="username" [(ngModel)]="searchForm.username"
+                            required>
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Password" name="password" type="password"
+                            [(ngModel)]="searchForm.password" required>
+                    </mat-form-field>
+                </mat-card-content>
+                <button mat-stroked-button color="accent" class="btn-block" type="submit">Log in</button>
+
+                <div *ngIf="loginFailed">
+                    <p>Wrong Username or Password</p>
+                    <button mat-stroked-button color="warn" class="btn-block" routerLink="">Cancel</button>
+                </div>
+
+                <div class="separator">
+                    <div class="line"></div>
+                    <div class="or">or</div>
+                    <div class="line"></div>
+                  </div>
+
+                <button mat-stroked-button color="primary" class="btn-block"
+                    (click)="navigateToSignup($event)">Signup</button>
+
+                    <div *ngIf="usernameExist">
+                        <p>This Username already exists.Please use a different Username</p>
+                        <button mat-stroked-button color="warn" class="btn-block" routerLink="">Cancel</button>
+                    </div>
+
+            </form>
+            
+        </div>
+        <div *ngIf="isLoggedIn">
+            <!-- Content to show when the condition is false -->
+            <p>You are already Logged in!</p>
+            <button mat-raised-button color="accent" (click)="logout()">Logout</button>
+        </div>
+    </mat-card>
+</div>

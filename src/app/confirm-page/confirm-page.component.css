@@ -1,0 +1,50 @@
+.completion-container {
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Add rounded corners if desired */
+    padding: 20px; /* Add padding for spacing within the form */
+    max-height: 80vh; /* Set maximum height to 80% of the viewport height */
+    overflow-y: auto;
+  }
+  
+  p {
+    font-size: 20px;
+    color: #4CAF50; /* Green color for success */
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  a {
+    color: #2196F3; /* Blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure the button behaves as a block-level element */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }

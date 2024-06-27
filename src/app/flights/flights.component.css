@@ -1,0 +1,11 @@
+.no-flights-message {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 0; /* Add some spacing */
+  }
+  
+  .no-flights-message p {
+    font-size: 18px; /* Adjust the font size as needed */
+  }

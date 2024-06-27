@@ -1,0 +1,17 @@
+<mat-card *ngFor="let flight of flights">
+  <mat-card-header>
+    <mat-card-subtitle>{{flight.flightId}}</mat-card-subtitle>
+    <mat-card-title>{{flight.origin}} to {{flight.destination}}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content fxLayout="row" fxLayoutGap="20px">
+    <div>Departure: {{flight.departureDate | date}} at {{flight.departureTime}}</div>
+    <div>Arrival: {{flight.arrivalDate | date}} at {{flight.arrivalTime}}</div>
+    <div>Fare: Rs{{flight.fare}}</div>
+    <button mat-raised-button color="primary" (click)="navigateToBooking(flight.flightId)">Book</button>
+  </mat-card-content>
+</mat-card>
+
+<div *ngIf="response === false" class="no-flights-message">
+  <p>No flights available for your specific requirements.</p>
+</div>
+  

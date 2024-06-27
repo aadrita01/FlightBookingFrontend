@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<div class="container mt-5">
+  <div class="card p-4 custom-background">
+    <form [formGroup]="passengerForm" (ngSubmit)="onSubmit()" class="mb-4">
+      <div class="form-group">
+        <label for="numberOfPassengers">Enter the number of passengers (max 5):</label>
+        <mat-form-field appearance="fill" class="w-100">
+          <input matInput type="number" id="numberOfPassengers" formControlName="numberOfPassengers" />
+        </mat-form-field>
+      </div>
+      <button mat-raised-button color="primary" type="submit">Enter</button>
+    </form>
+
+    <div class="mb-4" *ngIf="passengerCount">
+      <app-passenger-form *ngIf="passengerCount" [passengerCount]="passengerCount"></app-passenger-form>
+    </div>
+
+    <!-- Display total cost and "Next" button -->
+    <div class="mb-4" *ngIf="passengerCount">
+      <!-- <p>Total Cost: {{ totalCost }}</p> -->
+      <button mat-raised-button color="primary" (click)="onNext()">Next</button>
+    </div>
+  </div>
+</div>

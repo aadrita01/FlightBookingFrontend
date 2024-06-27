@@ -1,0 +1,14 @@
+<div>
+    <h2>Enter Reference ID</h2>
+    <form [formGroup]="referenceIdForm" (ngSubmit)="submitForm()">
+      <label for="referenceId">Reference ID:</label>
+      <input type="text" id="referenceId" formControlName="referenceId" required>
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div *ngIf="response">
+    
+    <h3>{{ response.response }}</h3>
+  </div>
+

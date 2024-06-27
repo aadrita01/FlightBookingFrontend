@@ -1,0 +1,38 @@
+.admin-container {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a subtle lift */
+  }
+  
+  .admin-title {
+    text-align: center;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    margin-top: 20px;
+  }
+  
+  .admin-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Button shadow for depth */
+    border-width: 2px;
+    border: 1px solid currentColor;
+    line-height: 54px;
+    background: #FFF7FA;
+    width: 110%;
+    
+  }
+  .admin-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+ 
+  
+  
+  

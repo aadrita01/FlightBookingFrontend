@@ -1,0 +1,9 @@
+<form *ngIf="passengerCount" [formGroup]="passengerForm">
+  <div *ngFor="let passengerIndex of getPassengerIndices()">
+    <h3>Passenger {{ passengerIndex + 1 }}</h3>
+    <label for="name">Name:</label>
+    <input type="text" formControlName="name{{passengerIndex}}" />
+    <label for="age">Age:</label>
+    <input type="number" formControlName="age{{passengerIndex}}" />
+  </div>
+</form>

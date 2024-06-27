@@ -1,0 +1,7 @@
+.custom-background {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px; /* Add rounded corners if desired */
+    padding: 20px; /* Add padding for spacing within the form */
+    max-height: 80vh; /* Set maximum height to 80% of the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+  }

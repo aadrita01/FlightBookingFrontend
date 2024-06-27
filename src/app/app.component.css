@@ -1,0 +1,15 @@
+.main-container {
+    background-image: url('../assets/sky1.jpg');
+    background-size: 100%;
+    background-position: center;
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  
